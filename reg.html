@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../CSS files/styles.css">
+<style>
+    table{
+        background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUHjMIRVuRHxXHViVB7ISgZBRz5KiuU8amnA&usqp=CAU") ;
+        padding:3%;
+        border-radius: 10px;
+        
+    }
+</style>
+
+<script>
+function validate(){
+    var fn=document.reg_form.fn;
+    var ln=document.reg_form.ln;
+    var pwd=document.reg_form.pwd;
+    var dob=document.reg_form.dob;
+    var email=document.reg_form.email;
+    const validemail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if(fn.value.length<=0)
+    {
+        alert(" FirstName is required ");
+        fn.focus();
+        return false;
+    }
+
+    if(ln.value.length<=0)
+    {
+        alert("LastName is required");
+        ln.focus();
+        return false;
+    }
+
+    if(pwd.value.length<=6)
+    {
+        alert("Password must be longer than 6 characters ");
+        pwd.focus();
+        return false;
+    }
+
+    if(!validemail.test(email)){
+        alert("Please enter a valid email address");
+        return false;
+    }
+
+}
+
+</script>
+
+</head>
+
+<header>
+    <center>
+<a class ="active" href="../HTML files/home.html" target="right">Home</a> &nbsp;
+<a class ="active" href="reg.html">Register</a> &nbsp;
+<a class ="active" href="login.html">Login</a> &nbsp;
+<a class ="active" href="catalogue.html">Catalogue</a> &nbsp;
+<a class ="active" href="cart.html"> Cart</a> &nbsp;
+    </center>
+
+<br><br>
+<h2 style="text-align:center; color:white;"> Vidya Jyothi Institute of Technology</h2>
+<!-- <img src="https://vjit.ac.in/dss/images/vjitlogo.png" alt="vjit logo" > -->
+</header>
+
+
+<section>
+<nav>
+<ul>
+    <li><a href="cse.html">CSE</a> </li> <br>
+    <li><a href="ece.html">ECE</a>  </li> <br>
+    <li><a href="it.html">IT</a>  </li> <br>
+    <li><a href="eee.html">EEE</a>  </li> <br>
+</ul>
+</nav>
+
+<body>   
+    <h2 style="color: red;">Registration form</h2>
+
+    <form method="" action="" name="reg_form" onSubmit=" validate();">
+<table>
+<tr>
+    <td>FirstName:</td>
+    <td><input type="text" name="fn" ></td>
+</tr>
+
+<tr>
+    <td>LastName:</td>
+    <td><input type="text" name="ln"></td>
+</tr>
+
+<tr>
+    <td>Password:</td>
+    <td><input type="password" name="pwd"></td>
+</tr>
+
+<tr>
+    <td>Date of Birth:</td>
+    <td><input type="date" name="dob"></td>
+</tr>
+
+<tr>
+    <td>Email:</td>
+    <td><input type="text" name="email"></td>
+</tr>
+
+<tr>
+    <td>Gender:</td>
+    <td><input type="radio" name="branch" value="cse">CSE</td> &nbsp;
+    <td><input type="radio" name="branch" value="ece">ECE</td> &nbsp;
+    <td><input type="radio" name="branch" value="ece">IT</td> &nbsp;
+    <td><input type="radio" name="branch" value="ece">EEE</td> &nbsp;
+</tr>
+
+<tr>
+    <td>Known Languages:</td>
+    <td><input type="checkbox" name="lang" value="c">C</td> &nbsp;
+    <td><input type="checkbox" name="lang" value="java">Java</td> &nbsp;
+    <td><input type="checkbox" name="lang" value="python">Python</td> &nbsp;
+    <td><input type="checkbox" name="lang" value="c++">C++</td> &nbsp;
+</tr>
+
+<div class="btn">
+<tr>
+    <td><input type="submit" value="Submit"></td>
+</tr>
+</div>
+
+</table>
+</form>
+
+<footer>
+    <p>Copyright © 2022. Vidya Jyothi Institute of Technology. All Right Reserved</p>
+    <p style="text-align:center;">Aziznagar Gate, Chilkur Road, Hyderabad- 500075,<br /> Telangana, India.<br />
+     <p>info@vjit.ac.in</p></br>
+</footer>
+</body>
+</html>

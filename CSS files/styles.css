@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    
+}
+
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO7UAdQ6Z_b4LyToK4pYD0gBe8oc_zWJ78GA&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+/*background-color: red;  */
+background-image: url("https://thumbs.dreamstime.com/b/blurred-background-colorful-books-university-college-textbooks-fiction-bookshelf-home-library-concept-knowledge-163665811.jpg");
+
+padding:30px;
+font-size: medium;
+}
+nav ul{
+list-style-type: none;
+padding: 0;
+
+}
+/* .container{
+    display: flex;
+    height: 500px;
+
+} */
+nav{
+  float: left;
+  width: 200px;
+  height:510px;
+  border-right: 2px solid white;
+ /* background-color: black;
+  opacity:0.7; */
+  padding: 1%;  
+  padding-top: 5%;
+}
+
+section{
+    /* display: table; */
+    clear: both;
+}
+.box{
+    padding: 20px;
+    padding-left: 170px;
+    overflow:scroll;
+    height: 450px;  
+}
+table  tr th{
+    padding-right: 50px; 
+}
+table tr td{
+    padding-right: 50px;
+}
+article{
+    float: left;
+    padding-left: 20px;
+    width: 90%;
+    /* height: 300px;  */
+    text-align: center;
+}
+footer{
+    position:absolute;
+    width: 100%;
+    left: 0;
+    bottom:0;
+	background-image: url("https://wallpaperaccess.com/full/862206.jpg");
+	color: white;
+    padding-bottom:150px;
+	text-align: center;
+    height:50px;
+    line-height: 25px;
+}
+a{
+    text-decoration: none;
+    color:white;
+    padding:15px 32px;
+    font-weight: bold;
+    }
+a:hover{
+    background-color: gray;
+    padding:15px 32px;
+}
+h2{
+    text-align: center;
+}
+table{
+margin-left: 10%;
+margin-right: 20%;
+margin-bottom: 20%;
+
+}
+
+.content{
+    padding:5%;
+}
